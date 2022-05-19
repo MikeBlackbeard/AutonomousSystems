@@ -1,0 +1,164 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Gaussian Mixtures in Machine Learning\\
+
+%{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+%should not be used}
+%\thanks{Identify applicable funding agency here. If none, delete this.}
+%}
+
+\author{\IEEEauthorblockN{Miguel Antonio Rodriguez Delgado}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+Dortmund, Germany \\
+miguel-antonio.rodriguez-delgado@stud.hshl.de}
+%\and
+%\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%\and
+%\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%\and
+%\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%\and
+%\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+%\and
+%\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
+%\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+%\textit{name of organization (of Aff.)}\\
+%City, Country \\
+%email address or ORCID}
+}
+
+\maketitle
+
+\begin{abstract}
+
+Gaussian or Normal models help us to represent most of the distribution of all aspects of the world, showing how they can spread regarding the possibility for it to happen. This Gaussian models can allow us to distinguish between different set of points in an image for example. But in certain cases a point can be part of different groups. In this case Gaussian Mixtures can allow us to represent patterns which have elements in common. Gaussian Mixtures can be used in different fields. For example, to generate cancer detection algorithms.
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+Gaussian Mixtures, Deep learning, Machine learning.
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+In recent years there have been an increasing interest in deep learning algorithms for clustering detection, And deep neural networks have improved in the field of supervised classification \cite{deepgaussian}. Some important examples of this are present in Face-book deep face software detection \cite{deepgaussian}, prediction of pancreatic \cite{convolutional} and liver \cite{liver} cancer, among others.
+
+Since Gaussian Mixtures are based on a combination of Gaussian Normal models, it is important to understand what is a Gaussian Normal mode (section \ref{normal_modes}). Then Gaussian Mixtures will be discussed (Section \ref{gmixtures}) and finally some examples on how Gaussian Mixtures can be applied on different research areas.
+
+In \cite{aproxinter} and \cite{deepgaussian} we find a description on how Gaussian mixtures work in a general way. In reference \cite{random} is described how deep learning algorithm can be represented as Gaussian mixtures. And in \cite{convolutional} and \cite{liver} we can find examples on how to use Gaussian Mixtures to detect and predict pancreatic and liver cancer.
+
+\section{Gaussian Models} \label{normal_modes}
+
+Most of the parameters related on classification can be represented thought Gaussian Models \cite{normal_dist}. An simple example of this is the height of the population. In Fig \ref{fig:height} we can see a representation of this. If we start analysing the figure from left to right we will see that the amount of short people is small, since is not very frequent to find small people. As we move on towards the middle of the graph, the amount of people start increasing, showing that most of the population will be present in this central part of the table. A proof of this in the real world, is that most of the people that we interact with is going to be near this height. But as we keep moving more to the right side of the graph, it will decrease again. Here once again we can see that the amount of tall people in our surroundings is not very high. This distribution will give us the shape of a bell. An this bell shape will be present in any distribution that we want to analyse. 
+
+\begin{figure}
+	\label{fig:height}
+	\includegraphics[scale=0.25]{imgs/height.png}
+	\caption{Gaussian distribution of the population height. StatQuest with Josh Starmer. The Normal Distribution, Clearly Explained!!!. 2017.}
+\end{figure}
+
+Another example will be regarding the times on a race \ref{fig:race}. The best racers will be on the left of the graph, that will represent the one or two racers that will pass the goal at first. Then while the race time increases there is more people that will arrive together, in this case not only one or two at the same time but maybe hundreds, and at the end of the graph we will find those that are less prepared and again at the end of the racers, it will pass only a few, normally just one or two.
+
+\begin{figure}[h]
+	\label{fig:race}
+	\includegraphics[scale=0.48]{imgs/race.png}
+	\caption{Distribution of Marathon Finishing Times. Allen, Eric and Dechow, Patricia and Pope, Devin and Wu, George. (2016). Reference-Dependent Preferences: Evidence from Marathon Runners.}
+\end{figure}
+
+However this models will be capable to reproduce only single classification models.
+
+\section{Gaussian Mixtures} \label{gmixtures}
+
+Since most of the models that have to be analysed contain more that one single distribution, a mixture of these distributions is required.
+
+Gaussian Mixture Models are used for clustering applications. Some examples of this are audio classification, that would allow to determinate different  
+
+%
+%\begin{table}[htbp]
+%\caption{Table Type Styles}
+%\begin{center}
+%\begin{tabular}{|c|c|c|c|}
+%\hline
+%\textbf{Table}&\multicolumn{3}{|c|}{\textbf{Table Column Head}} \\
+%\cline{2-4} 
+%\textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}& \textbf{\textit{Subhead}} \\
+%\hline
+%copy& More table copy$^{\mathrm{a}}$& &  \\
+%\hline
+%\multicolumn{4}{l}{$^{\mathrm{a}}$Sample of a Table footnote.}
+%\end{tabular}
+%\label{tab1}
+%\end{center}
+%\end{table}
+%
+%\begin{figure}[htbp]
+%\centerline{\includegraphics{fig1.png}}
+%\caption{Example of a figure caption.}
+%\label{fig}
+%\end{figure}
+
+
+\begin{thebibliography}{00}
+\bibitem {random} 
+Seddik, M.E.A., Louart, C., Tamaazousti, M., \& Couillet, R.. (2020). Random Matrix Theory Proves that Deep Learning Representations of GAN-data Behave as Gaussian Mixtures. <i>Proceedings of the 37th International Conference on Machine Learning</i>, in <i>Proceedings of Machine Learning Research</i> 119:8573-8582 Available from https://proceedings.mlr.press/v119/seddik20a.html.
+
+\bibitem{convolutional}
+Sekaran, K., Chandana, P., Krishna, N.M. et al. Deep learning convolutional neural network (CNN) With Gaussian mixture model for predicting pancreatic cancer. Multimed Tools Appl 79, 10233–10247 (2020). https://doi.org/10.1007/s11042-019-7419-5
+
+\bibitem{deepgaussian}
+Viroli, C., McLachlan, G.J. Deep Gaussian mixture models. Stat Comput 29, 43–51 (2019). https://doi.org/10.1007/s11222-017-9793-z
+
+\bibitem{aproxinter}
+Nalisnick, E.T., Hertel, L., \& Smyth, P. (2016). Approximate Inference for Deep Latent Gaussian Mixtures.
+
+\bibitem{liver}
+Amita Das, U. Rajendra Acharya, Soumya S. Panda, Sukanta Sabut,
+Deep learning based liver cancer detection using watershed transform and Gaussian mixture model techniques,
+Cognitive Systems Research,
+Volume 54,
+2019,
+Pages 165-175,
+ISSN 1389-0417,
+https://doi.org/10.1016/j.cogsys.2018.12.009.
+(https://www.sciencedirect.com/science/article/pii/S1389041718310143)
+
+\bibitem{normal_dist}
+The Normal Distribution, Clearly Explained!!! (2017, 9 oktober). YouTube. Geraadpleegd op 29 april 2022, van https://www.youtube.com/watch?v=rzFX5NWojp0
+
+\bibitem{race}
+Allen, Eric and Dechow, Patricia and Pope, Devin and Wu, George. (2016). Reference-Dependent Preferences: Evidence from Marathon Runners. Management Science. 63. 10.1287/mnsc.2015.2417. 
+
+\bibitem{mixture_models}
+Gaussian Mixture Models. (2020, 28 december). YouTube. Geraadpleegd op 29 april 2022, van https://www.youtube.com/watch?v=q71Niz856KE
+
+\end{thebibliography}
+
+\end{document}
