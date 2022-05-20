@@ -77,7 +77,7 @@ In \cite{aproxinter} and \cite{deepgaussian} we find a description on how Gaussi
 
 \section{Gaussian Models} \label{normal_modes}
 
-Most of the parameters related on classification can be represented thought Gaussian Models \cite{normal_dist}. An simple example of this is the height of the population. In Fig \ref{fig:height} we can see a representation of this. If we start analysing the figure from left to right we will see that the amount of short people is small, since is not very frequent to find small people. As we move on towards the middle of the graph, the amount of people start increasing, showing that most of the population will be present in this central part of the table. A proof of this in the real world, is that most of the people that we interact with is going to be near this height. But as we keep moving more to the right side of the graph, it will decrease again. Here once again we can see that the amount of tall people in our surroundings is not very high. This distribution will give us the shape of a bell. An this bell shape will be present in any distribution that we want to analyse. 
+Most of the parameters related on classification can be represented thought Gaussian Models \cite{normal_dist}. An simple example of this is the height of the population. In Fig. 1 we can see a representation of this. If we start analysing the figure from left to right we will see that the amount of short people is small, since is not very frequent to find small people. As we move on towards the middle of the graph, the amount of people start increasing, showing that most of the population will be present in this central part of the table. A proof of this in the real world, is that most of the people that we interact with is going to be near this height. But as we keep moving more to the right side of the graph, it will decrease again. Here once again we can see that the amount of tall people in our surroundings is not very high. This distribution will give us the shape of a bell. An this bell shape will be present in any distribution that we want to analyse. 
 
 \begin{figure}
 	\label{fig:height}
@@ -85,7 +85,7 @@ Most of the parameters related on classification can be represented thought Gaus
 	\caption{Gaussian distribution of the population height. StatQuest with Josh Starmer. The Normal Distribution, Clearly Explained!!!. 2017.}
 \end{figure}
 
-Another example will be regarding the times on a race \ref{fig:race}. The best racers will be on the left of the graph, that will represent the one or two racers that will pass the goal at first. Then while the race time increases there is more people that will arrive together, in this case not only one or two at the same time but maybe hundreds, and at the end of the graph we will find those that are less prepared and again at the end of the racers, it will pass only a few, normally just one or two.
+Another example will be regarding the times on a race Fig. 2. The best racers will be on the left of the graph, that will represent the one or two racers that will pass the goal at first. Then while the race time increases there is more people that will arrive together, in this case not only one or two at the same time but maybe hundreds, and at the end of the graph we will find those that are less prepared and again at the end of the racers, it will pass only a few, normally just one or two.
 
 \begin{figure}[h]
 	\label{fig:race}
@@ -99,7 +99,49 @@ However this models will be capable to reproduce only single classification mode
 
 Since most of the models that have to be analysed contain more that one single distribution, a mixture of these distributions is required.
 
-Gaussian Mixture Models are used for clustering applications. Some examples of this are audio classification, that would allow to determinate different  
+Gaussian Mixture Models are used for clustering applications. Some examples of this are audio classification, document classification, segmentation for autonomous driving. In many cases the clustering process is well defined and using some clustering algorithms such as K-means clustering or Hierarchical clustering, but for the purpose of this seminar these algorithms will not be discussed.
+
+Some data sets can be more complex and can have clusters that are intersecting with each other, so in these cases the we need an algorithm that will swap from Hard Clustering to Soft Clustering.
+
+Hard clustering means that a point in the data set belongs only to one group, while in soft clustering a point can belong a determinate percentage to a different amount of groups.
+
+Gaussian mixtures are based in normal distributions, that as we have seen in the previous section will tell us in which proportion a point belongs to a group.
+
+\subsection{Clustering points}
+
+In a Gaussian mixture a point can belong to two different groups. The way that the Gaussian mixture will assign a point to a cluster will depend on how far and how probable is that a point belongs to cluster and in which percentage it does. For example in Fig. 3 if we have a set of points and two Gaussian the points will belong to the yellow or the blue cluster, all the points that are inside the blue cluster, or in the left part of the graph belong to the blue Gaussian, the points that are inside the yellow cluster or in the left side of the graph belong to the yellow Gaussian, and the points that are between the two colors, will belong in a certain percentage to both of the clusters.
+
+
+\begin{figure}[h]
+	\includegraphics[scale=0.19]{imgs/gaussian1.png}
+	\label{fig:gaussian}
+	\caption{Colouring points. Luis Serrano. Gaussian Mixture Models. 2020}
+\end{figure}
+
+To define the percentage in which a point belongs to a group the Gaussian Normal model o the Gaussian distribution that we saw before will be use. For example, we can call the yellow cluster $f(x)$ and the blue cluster $g(x)$. Each one of this functions will represent a Normal distribution, the points that are nearest or under the center of the bell will belong to an area or a cluster and they will have a high percentage regarding to this group, and the ones that are far from the center or in the borders of the bell can still belong to the cluster but in a smaller percentage. 
+
+In Fig. 4 we can see an example on how Normal distributions can be used to assign a different percentage value to different points. If we look at the points left to right, we will see that the first point has a biggest influence under the yellow Gaussian ($f(x)$) than under the blue Gaussian ($g(x)$). for this point the values assigned could be around 75\% of probability to belong to the yellow area and 25\% to belong to the blue area. The second point will probably have 50\% of probabilities to belong to both areas, and the third point could belong in a 95\% to the blue Gaussian and 5\% to the yellow one.
+
+\subsection{Fitting a Gaussian}
+
+To get a good fitting for a Gaussian we will have to take all the points that belong to a cluster and to get the center of this cluster. To do this we calculate the $x$-variance, the $y$-variance and the covariance to calculate the center of mass of the system. The formulas used for this are the next ones.
+
+\begin{figure}[h]
+	\includegraphics[scale=0.19]{imgs/gaussian2.png}
+	\label{fig:gaussian2}
+	\caption{Colouring points with normal distributions. Luis Serrano. Gaussian Mixture Models. 2020}
+\end{figure}
+
+There are other values that have to been taken into account to calculate the center of mass, for example the percentages that a point have in a cluster to give a better center result but for the purposes of this seminar, the mathematical formulas will not be discussed deeply.
+
+\subsection{Gaussian Mixture Algorithm}
+
+The Gaussian Mixture Algorithm is based in three main steps. starting random Gaussian models, fitting the points to the Gaussian models and recalculating the Gaussian models regarding the values that have been fitted on them.
+
+For the first step the algorithm will not know where are the points located or how are they clustered. For this reason, the Gaussian models will start randomly. After this a loop containing the second and third part of the algorithm, this algorithm will run as many times as required, this will be until the algorithm is not converging.
+
+Inside the loop, the algorithm will assign the point to a Gaussian using the fitting Gaussian method that we saw before. 
+
 
 %
 %\begin{table}[htbp]

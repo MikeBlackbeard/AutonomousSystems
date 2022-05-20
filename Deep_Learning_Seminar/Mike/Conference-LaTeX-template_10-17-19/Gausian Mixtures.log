@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.10)  29 APR 2022 09:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.10)  20 MAY 2022 10:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -346,55 +346,90 @@ map}
 
 
  <./imgs/height.png> <./imgs/race.png>]
-Underfull \hbox (badness 1721) in paragraph at lines 131--132
+<imgs/gaussian1.png, id=13, 1315.16344pt x 559.33969pt>
+File: imgs/gaussian1.png Graphic file (type png)
+<use imgs/gaussian1.png>
+Package pdftex.def Info: imgs/gaussian1.png  used on input line 116.
+(pdftex.def)             Requested size: 249.88365pt x 106.27563pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
+[][]
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 121
+.
+
+(C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
+\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 121
+.
+
+(C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
+\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<imgs/gaussian2.png, id=14, 1400.23125pt x 430.60875pt>
+File: imgs/gaussian2.png Graphic file (type png)
+<use imgs/gaussian2.png>
+Package pdftex.def Info: imgs/gaussian2.png  used on input line 130.
+(pdftex.def)             Requested size: 266.0467pt x 81.8165pt.
+
+Overfull \hbox (14.0467pt too wide) in paragraph at lines 130--132
+[][]
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 169--170
 \OT1/ptm/m/n/8 of Ma-chine Learn-ing Re-search</i> 119:8573-8582 Avail-able fro
 m
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 143--152
+Underfull \hbox (badness 3428) in paragraph at lines 181--190
 []\OT1/ptm/m/n/8 Amita Das, U. Ra-jen-dra Acharya, Soumya S. Panda, Sukanta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--152
+Underfull \hbox (badness 10000) in paragraph at lines 181--190
 \OT1/ptm/m/n/8 Sabut, Deep learn-ing based liver can-cer de-tec-tion us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--152
+Underfull \hbox (badness 10000) in paragraph at lines 181--190
 \OT1/ptm/m/n/8 wa-ter-shed trans-form and Gaus-sian mix-ture model tech-niques,
 
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 143--152
+Underfull \hbox (badness 2600) in paragraph at lines 181--190
 \OT1/ptm/m/n/8 Cog-ni-tive Sys-tems Re-search, Vol-ume 54, 2019, Pages 165-175,
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--152
+Underfull \hbox (badness 10000) in paragraph at lines 181--190
 \OT1/ptm/m/n/8 ISSN 1389-0417, https://doi.org/10.1016/j.cogsys.2018.12.009.
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+[2 <./imgs/gaussian1.png> <./imgs/gaussian2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 []\OT1/ptm/m/n/8 The Nor-mal Dis-tri-bu-tion, Clearly Ex-plained!!! (2017, 9
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 \OT1/ptm/m/n/8 ok-to-ber). YouTube. Ger-aad-pleegd op 29 april 2022, van
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 []\OT1/ptm/m/n/8 Gaussian Mix-ture Mod-els. (2020, 28 de-cem-ber).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 \OT1/ptm/m/n/8 YouTube. Ger-aad-pleegd op 29 april 2022, van
  []
 
@@ -409,29 +444,29 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2
+[3
 
-] (Gausian Mixtures.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (Gausian Mixtures.aux) ) 
 Here is how much of TeX's memory you used:
- 4103 strings out of 478582
- 66143 string characters out of 2837264
- 365501 words of memory out of 3000000
- 22280 multiletter control sequences out of 15000+600000
- 497490 words of font info for 75 fonts, out of 8000000 for 9000
+ 4151 strings out of 478582
+ 67110 string characters out of 2837264
+ 369534 words of memory out of 3000000
+ 22312 multiletter control sequences out of 15000+600000
+ 500325 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,62p,1033b,255s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
-base/8r.enc}<C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fonts/
-type1/urw/times/utmb8a.pfb><C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local/Program
-s/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/$FCFJ00-NB0564CH0C6I/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "Gausian Mixtures.pdf" (2 pages, 233220 bytes).
+ 55i,8n,62p,1019b,255s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local/Programs
+/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/$FCFJ00-N
+B0564CH0C6I/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fonts/type1/ur
+w/times/utmb8a.pfb><C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local/Programs/MiKTeX
+/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local
+/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/$FCFJ00-NB0564CH0C6
+I/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "Gausian Mixtures.pdf" (3 pages, 1015992 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
+ 50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
