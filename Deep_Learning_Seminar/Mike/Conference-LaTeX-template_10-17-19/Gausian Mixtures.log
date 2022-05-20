@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.10)  20 MAY 2022 10:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.10)  20 MAY 2022 10:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -380,56 +380,56 @@ Overfull \hbox (14.0467pt too wide) in paragraph at lines 130--132
 [][]
  []
 
-
-Underfull \hbox (badness 1721) in paragraph at lines 169--170
+[2 <./imgs/gaussian1.png> <./imgs/gaussian2.png>]
+Underfull \hbox (badness 1721) in paragraph at lines 173--174
 \OT1/ptm/m/n/8 of Ma-chine Learn-ing Re-search</i> 119:8573-8582 Avail-able fro
 m
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 181--190
+Underfull \hbox (badness 3428) in paragraph at lines 185--194
 []\OT1/ptm/m/n/8 Amita Das, U. Ra-jen-dra Acharya, Soumya S. Panda, Sukanta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--190
+Underfull \hbox (badness 10000) in paragraph at lines 185--194
 \OT1/ptm/m/n/8 Sabut, Deep learn-ing based liver can-cer de-tec-tion us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--190
+Underfull \hbox (badness 10000) in paragraph at lines 185--194
 \OT1/ptm/m/n/8 wa-ter-shed trans-form and Gaus-sian mix-ture model tech-niques,
 
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 181--190
+Underfull \hbox (badness 2600) in paragraph at lines 185--194
 \OT1/ptm/m/n/8 Cog-ni-tive Sys-tems Re-search, Vol-ume 54, 2019, Pages 165-175,
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--190
+Underfull \hbox (badness 10000) in paragraph at lines 185--194
 \OT1/ptm/m/n/8 ISSN 1389-0417, https://doi.org/10.1016/j.cogsys.2018.12.009.
  []
 
-[2 <./imgs/gaussian1.png> <./imgs/gaussian2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 []\OT1/ptm/m/n/8 The Nor-mal Dis-tri-bu-tion, Clearly Ex-plained!!! (2017, 9
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 \OT1/ptm/m/n/8 ok-to-ber). YouTube. Ger-aad-pleegd op 29 april 2022, van
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 []\OT1/ptm/m/n/8 Gaussian Mix-ture Mod-els. (2020, 28 de-cem-ber).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 \OT1/ptm/m/n/8 YouTube. Ger-aad-pleegd op 29 april 2022, van
  []
 
@@ -449,8 +449,8 @@ Before submitting the final camera ready copy, remember to:
 ] (Gausian Mixtures.aux) ) 
 Here is how much of TeX's memory you used:
  4151 strings out of 478582
- 67110 string characters out of 2837264
- 369534 words of memory out of 3000000
+ 67168 string characters out of 2837264
+ 368534 words of memory out of 3000000
  22312 multiletter control sequences out of 15000+600000
  500325 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -464,7 +464,7 @@ w/times/utmb8a.pfb><C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local/Programs/MiKTeX
 /fonts/type1/urw/times/utmbi8a.pfb><C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local
 /Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/$FCFJ00-NB0564CH0C6
 I/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "Gausian Mixtures.pdf" (3 pages, 1015992 bytes).
+Output written on "Gausian Mixtures.pdf" (3 pages, 1016713 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
