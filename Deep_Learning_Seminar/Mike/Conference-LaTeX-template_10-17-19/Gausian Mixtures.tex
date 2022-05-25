@@ -142,6 +142,17 @@ For the first step the algorithm will not know where are the points located or h
 
 Inside the loop, the algorithm will assign the point to a Gaussian using the fitting Gaussian method that we saw before. The points will be given a percentage value to belong to one or another Gaussian. After this, the the algorithm will recalculate the center of the Gaussian models with the information of the points that have been fitting to it. After this, with the new calculated Gaussian models, the algorithm will be given new percentages, and they will be assigned again to the respective Gaussian with the new values, and the center of the Gaussian will be calculated again. This process will continue while the algorithm is not converging.
 
+An example of this process can be found on Fig 5. The first part is defining random Gaussians, then the points are coloured according how near they are to the respective Gaussian, then the Gaussians are recalculated, the points are coloured again, and this proces continues until the Gaussian Mixture converges.
+
+\begin{figure}[h]
+	\includegraphics[scale=0.22]{imgs/gaussian3.png}
+	\label{fig:gaussian}
+	\caption{Gaussian Mixtures process. Luis Serrano. Gaussian Mixture Models. 2020}
+\end{figure}
+
+\section{Conclusion} 
+
+The Gaussian Mixture is a soft clustering model that allows to gather members for the cluster based on the probabilities that the point belong to it. This method can be use to cluster data that is not well defined and that can be difficult to cluster with hard clustering methods.
 
 %
 %\begin{table}[htbp]
