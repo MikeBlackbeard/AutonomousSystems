@@ -11,12 +11,13 @@ t_role = 'string'
 # Choosing TruckName
 TruckName = input("Truck name: ")
 Distance_Covered = input("Distance covered: ")
+Match_of_Route = input("Match of route ( 0 for False and 1 for True): ")
+Fuel_Consumption = input("Fuel Consumption: ")
+Body_Characteristics = input("Body Characteristics (1 = bad, 2 = good, 3 = better, 4 = best): ")
+Equipment_Sensors = input("Equipement sensors: ")
+Efficiency = input("Efficiency (1 = bad, 2 = good, 3 = better, 4 = best): ")
+
 TruckSpeed = input("Truck Speed: ")
-#Match_of_Route = input("Match of route")
-#Fuel_Consumption = input("Fuel Consumption")
-#Body_Characteristics = input("Body Characteristics")
-#Equipment_Sensors = input("Equipement sensors")
-#Efficiency = input("Efficiency")
 TruckAngle = '0'
 
 # Connecting To Server
@@ -36,6 +37,21 @@ def receive():
 
             elif message == 'DISTANCE':
                 truck.send(Distance_Covered.encode(FORMAT))
+
+            elif message == 'MATCH':
+                truck.send(Match_of_Route.encode(FORMAT))
+
+            elif message == 'FUEL':
+                truck.send(Fuel_Consumption.encode(FORMAT))
+            
+            elif message == 'BODY':
+                truck.send(Body_Characteristics.encode(FORMAT))
+            
+            elif message == 'SENSORS':
+                truck.send(Equipment_Sensors.encode(FORMAT))
+
+            elif message == 'EFF':
+                truck.send(Efficiency.encode(FORMAT))
 
             elif message == 'MASTER_TRUCK' or message == 'SLAVE_TRUCK':
                 global t_role 
