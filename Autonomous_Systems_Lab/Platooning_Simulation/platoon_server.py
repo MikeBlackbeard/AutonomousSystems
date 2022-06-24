@@ -139,26 +139,26 @@ def user_in():
                 url = 'https://truckplatooningapi.herokuapp.com/predict'
                 truckData = {
                     "TruckName": Truck_names[0], #String
-                    "Distance_Covered": Distances[0], #Int
-                    "Match_of_Route": Matchs[0],  # 0 for False and 1 for True 
-                    "Fuel_Consumption": Fuels[0],  # Int 
-                    "Body_Characteristics": Bodys[0], # 1 = bad, 2 = good, 3 = better, 4 = best
-                    "Equipment_Sensors": Sensors[0], # Int denoting the number of sensors in the truck
-                    "Efficiency": Efficiencies[0],  # 1 = bad, 2 = good, 3 = better, 4 = best
+                    "Distance_Covered": int(Distances[0]), #Int
+                    "Match_of_Route": int(Matchs[0]),  # 0 for False and 1 for True 
+                    "Fuel_Consumption": int(Fuels[0]),  # Int 
+                    "Body_Characteristics": int(Bodys[0]), # 1 = bad, 2 = good, 3 = better, 4 = best
+                    "Equipment_Sensors": int(Sensors[0]), # Int denoting the number of sensors in the truck
+                    "Efficiency": int(Efficiencies[0]),  # 1 = bad, 2 = good, 3 = better, 4 = best
                     "TruckName2": Truck_names[1], #String
-                    "Distance_Covered2": Distances[1], #Int
-                    "Match_of_Route2": Matchs[1], # 0 for False and 1 for True 
-                    "Fuel_Consumption2": Fuels[1], # Int 
-                    "Body_Characteristics2": Bodys[1], # 1 = bad, 2 = good, 3 = better, 4 = best
-                    "Equipment_Sensors2": Sensors[1],  # Int denoting the number of sensors in the truck
-                    "Efficiency2": Efficiencies[1], # 1 = bad, 2 = good, 3 = better, 4 = best
+                    "Distance_Covered2": int(Distances[1]), #Int
+                    "Match_of_Route2": int(Matchs[1]), # 0 for False and 1 for True 
+                    "Fuel_Consumption2": int(Fuels[1]), # Int 
+                    "Body_Characteristics2": int(Bodys[1]), # 1 = bad, 2 = good, 3 = better, 4 = best
+                    "Equipment_Sensors2": int(Sensors[1]),  # Int denoting the number of sensors in the truck
+                    "Efficiency2": int(Efficiencies[1]), # 1 = bad, 2 = good, 3 = better, 4 = best
                     "TruckName3": Truck_names[2], #String
-                    "Distance_Covered3": Distances[2], #Int
-                    "Match_of_Route3": Matchs[2], # 0 for False and 1 for True 
-                    "Fuel_Consumption3": Fuels[2], # Int 
-                    "Body_Characteristics3": Bodys[2], # 1 = bad, 2 = good, 3 = better, 4 = best
-                    "Equipment_Sensors3": Sensors[2], # Int denoting the number of sensors in the truck
-                    "Efficiency3": Efficiencies[2]  # 1 = bad, 2 = good, 3 = better, 4 = best
+                    "Distance_Covered3": int(Distances[2]), #Int
+                    "Match_of_Route3": int(Matchs[2]), # 0 for False and 1 for True 
+                    "Fuel_Consumption3": int(Fuels[2]), # Int 
+                    "Body_Characteristics3": int(Bodys[2]), # 1 = bad, 2 = good, 3 = better, 4 = best
+                    "Equipment_Sensors3": int(Sensors[2]), # Int denoting the number of sensors in the truck
+                    "Efficiency3": int(Efficiencies[2])  # 1 = bad, 2 = good, 3 = better, 4 = best
                     }
 
                 result = requests.post(url, json=truckData)
