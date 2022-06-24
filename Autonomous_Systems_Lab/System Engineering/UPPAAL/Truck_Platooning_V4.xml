@@ -46,4 +46,4 @@ intruder2 = intruder();
 intruder3 = intruder();
 
 // List one or more processes to be composed into a system.
-system Truck1, Truck2, Truck3, Platooning, intruder1, intruder2, intruder3;</system></nta>
+system Truck1, Truck2, Truck3, intruder1, intruder2, intruder3, Platooning;</system></nta>
