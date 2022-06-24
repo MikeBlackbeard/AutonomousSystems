@@ -1,19 +1,9 @@
 //This file was generated from (Commercial) UPPAAL 4.0.15 rev. CB6BB307F6F681CB, November 2019
 
 /*
-
+Exist a moment when Truck 1 and Truck 2 are master at the same time
 */
 E<> Truck1.MasterTruck and Truck2.MasterTruck
-
-/*
-
-*/
-E[] Truck1.MasterTruck imply (Platooning.Slave_ == true and Platooning.Slave2_ == true)
-
-/*
-Always that the trucks are in the Queue, the three flags for accessing the platooning are on false, which represents avaliable
-*/
-A[] (Truck1.Que and Truck2.Que and Truck3.Que) imply (Platooning.Master_ == false and Platooning.Slave_ == false and Platooning.Slave2_ == false)
 
 /*
 If there is a slave truck, it has to be a master truck
