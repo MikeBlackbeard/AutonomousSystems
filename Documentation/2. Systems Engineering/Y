@@ -1,1 +1,50 @@
+\section{Systems Engineering }
+In order to be able to realize our Platooning system in a well-developed and structured way, we applied Model-based systems engineering methods. We used for that the two well-known modelling languages UML and SysML.
+\subsection{Use-Case Diagram}
+The first step was to define the context of our system using a Use-case diagram as shown in figure \ref{fig:use_case}. In our Use-case diagram we specified the main use cases that our truck platooning system should realize.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=13cm, height=14cm]{Template/Use_case_diagram.png}
+    \caption{Use-case Diagram}
+    \label{fig:use_case}
+\end{figure}
 
+\subsubsection{Requirements Diagram}
+Next step was to extract -based on our use cases- the system requirements of the platooning system. Defining the requirements is a very important step to be able to build our system in the right way and verify at the end that our system fulfilled these requirements. Our main system requirements are shown in figure \ref{fig:requirements}.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=13cm, height=14cm]{Template/Requirements_diagram.png}
+    \caption{Requirements Diagram}
+    \label{fig:requirements}
+\end{figure}
+
+\subsubsection{Block Definition Diagram}
+Based on our Use-case and Requirements diagrams, we were able to define our system architecture of the main components in our system. For this we used Block definition diagram as shown in figure \ref{fig:bdd}.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=13cm, height=12cm]{Template/bdd.png}
+    \caption{Block Definition Diagram Diagram}
+    \label{fig:bdd}
+\end{figure}
+
+\subsubsection{Activity Diagrams}
+Since we are 4 members in our group, we defined 4 main scenarios for our system in which every group member was assigned one scenario that he is responsible for. For each scenario we created an activity diagram to clarify how the scenario works. As for example in figure \ref{fig:AD}.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=13cm, height=14cm]{Template/Activity_Diagram_Incoming_Vehicles.png}
+    \caption{Intruder Scenario Activity Diagram}
+    \label{fig:AD}
+\end{figure}
+
+\subsubsection{Sequence Diagrams}
+Lastly, we went a step deeper and defined a sequence diagram for the main scenarios in order to clarify the signaling and messages flow (interaction) that take place in the respective scenario. For example as shown in figure \ref{fig:SD}.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=13cm, height=14cm]{Template/slaveFailSequence.png}
+    \caption{Slave\_Fails Scenario Sequence Diagram}
+    \label{fig:SD}
+\end{figure}
+
+All of our diagrams for the whole project can be found in the \textit{Systems Engineering} folder on our group Github:\\ https://github.com/MikeBlackbeard/AutonomousSystems/tree/main/\\Autonomous\_Systems\_Lab/System\%20Engineering
+
+After then having the system fundamentals modelled in UML/SysML we started the process of modelling our system in UPPAAL.
