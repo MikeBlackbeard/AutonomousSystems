@@ -9,14 +9,35 @@ The first step was to define the context of our system using a Use-case diagram 
     \label{fig:use_case}
 \end{figure}
 
+The operator should be able to start the platooning or end it at anytime. Once the platooning starts, it should automatically be able to nominate a master truck and the others are assigned as slaves. 
+The system should also be able to establish a control algorithm in which the slave trucks follows the lead and the speed of the master truck. The system should also be able to deal with intruder cars.
+
 \subsubsection{Requirements Diagram}
-Next step was to extract -based on our use cases- the system requirements of the platooning system. Defining the requirements is a very important step to be able to build our system in the right way and verify at the end that our system fulfilled these requirements. Our main system requirements are shown in figure \ref{fig:requirements}.
+Next step was to extract -based on our use cases- the system requirements of the platooning system. 
+Defining the requirements is a very important step to be able to build our system in the right way and verify at the end that our system fulfilled these requirements. 
+Our main system requirements are shown in figure \ref{fig:requirements}.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=13cm, height=14cm]{Template/Requirements_diagram.png}
     \caption{Requirements Diagram}
     \label{fig:requirements}
 \end{figure}
+
+Our system should be able to fulfill main requirements to enable stable platooning, these requirements are:\\
+\begin{enumerate}
+\item Have stable communication:\\
+Trucks should be able to communicate reliably with each other as well as with the main server.
+\item Enable control algorithm:\\
+Having a good control algorithm to manage speed, steering, acceleration, breaking as well as any faults.
+\item Maintaining appropriate distance between trucks:\\
+The distance between each 2 trucks should remain in the margin of < Max. distance allowed and > Min. distance allowed 
+\item Real-time behavior:\\
+Our system is very real-time critical therefore it is essential to ensure aspects like low latency, system Back-up and timeout protocol.
+\item Positioning and route determination:\\
+The system should be able to chose the optimal route as well as provide the positioning of all the trucks via GPS.
+\item Environment detection:\\
+Last but not least, our system should be able to realize and react to external factors (like for example an intruder car).
+\end{enumerate}  
 
 \subsubsection{Block Definition Diagram}
 Based on our Use-case and Requirements diagrams, we were able to define our system architecture of the main components in our system. For this we used Block definition diagram as shown in figure \ref{fig:bdd}.
@@ -30,10 +51,14 @@ Based on our Use-case and Requirements diagrams, we were able to define our syst
 \subsubsection{Activity Diagrams}
 Since we are 4 members in our group, we defined 4 main scenarios for our system in which every group member was assigned one scenario that he is responsible for. Our main scenarios were:\\
 \begin{enumerate}
-\item Master Truck fails
-\item Slave Truck fails
-\item Intruder
-\item Speed control
+\item Master Truck fails:\\
+How does our system react if the master truck that is leading the platooning breaks down or loses connection?
+\item Slave Truck fails:\\
+How does our system react if one of the following (slave) trucks breaks down or suffer an accident?
+\item Intruder:\\
+How does our system handle a car coming on between 2 trucks during the platooning.
+\item Speed control:\\
+How does our system ensure that all the trucks are moving with the same speed and the order of the trucks is preserved?
 \end{enumerate}  
 For each scenario we created an activity diagram to clarify how the scenario works. As for example in figure \ref{fig:AD}.
 \begin{figure}[htp]
