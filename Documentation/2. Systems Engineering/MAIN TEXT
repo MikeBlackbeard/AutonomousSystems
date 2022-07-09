@@ -12,7 +12,7 @@ The first step was to define the context of our system using a Use-case diagram 
 The operator should be able to start the platooning or end it at anytime. Once the platooning starts, it should automatically be able to nominate a master truck and the others are assigned as slaves. 
 The system should also be able to establish a control algorithm in which the slave trucks follows the lead and the speed of the master truck. The system should also be able to deal with intruder cars.
 
-\subsubsection{Requirements Diagram}
+\subsection{Requirements Diagram}
 Next step was to extract -based on our use cases- the system requirements of the platooning system. 
 Defining the requirements is a very important step to be able to build our system in the right way and verify at the end that our system fulfilled these requirements. 
 Our main system requirements are shown in figure \ref{fig:requirements}.
@@ -39,7 +39,7 @@ The system should be able to chose the optimal route as well as provide the posi
 Last but not least, our system should be able to realize and react to external factors (like for example an intruder car).
 \end{enumerate}  
 
-\subsubsection{Block Definition Diagram}
+\subsection{Block Definition Diagram}
 Based on our Use-case and Requirements diagrams, we were able to define our system architecture of the main components in our system. For this we used Block definition diagram as shown in figure \ref{fig:bdd}.
 \begin{figure}[htp]
     \centering
@@ -48,7 +48,7 @@ Based on our Use-case and Requirements diagrams, we were able to define our syst
     \label{fig:bdd}
 \end{figure}
 
-\subsubsection{Activity Diagrams}
+\subsection{Activity Diagrams}
 Since we are 4 members in our group, we defined 4 main scenarios for our system in which every group member was assigned one scenario that he is responsible for. Our main scenarios were:\\
 \begin{enumerate}
 \item Master Truck fails:\\
@@ -68,7 +68,7 @@ For each scenario we created an activity diagram to clarify how the scenario wor
     \label{fig:AD}
 \end{figure}
 
-\subsubsection{Sequence Diagrams}
+\subsection{Sequence Diagrams}
 Lastly, we went a step deeper and defined a sequence diagram for the main scenarios in order to clarify the signaling and messages flow (interaction) that take place in the respective scenario. For example as shown in figure \ref{fig:SD}.
 \begin{figure}[htp]
     \centering
