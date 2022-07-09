@@ -23,7 +23,7 @@ Our main system requirements are shown in figure \ref{fig:requirements}.
     \label{fig:requirements}
 \end{figure}
 
-Our system should be able to fulfill main requirements to enable stable platooning, these requirements are:\\
+Our system should be able to fulfill main requirements to enable stable platooning, these requirements are:
 \begin{enumerate}
 \item Have stable communication:\\
 Trucks should be able to communicate reliably with each other as well as with the main server.
